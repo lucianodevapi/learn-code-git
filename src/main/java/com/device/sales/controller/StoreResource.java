@@ -16,6 +16,12 @@ public class StoreResource {
 
     private final StoreService storeService;
 
+
+    @PostMapping
+    public void createStore(@RequestBody StoreDto storeDto){
+        storeService.addStore(storeDto);
+    }
+
     @GetMapping
     public ResponseEntity<List<StoreDto>> findStores(){
         return new ResponseEntity<List<StoreDto>>(storeService.findStores(), HttpStatus.OK);
