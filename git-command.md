@@ -10,7 +10,10 @@
 - git restore .
 - git branch
 - git checkout -b feature/novo-endpoint-post-store
-
+- git status
+- dit add .
+- git commit -m "first commit - create a post"
+- git push origin feature/novo-endpoint-post-store
 
 
 
